@@ -1,6 +1,5 @@
 plugins {
     `java-library`
-    `maven-publish`
 }
 
 repositories {
@@ -35,19 +34,4 @@ dependencies {
 
 val test by tasks.getting(Test::class) {
     useJUnitPlatform()
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("main") {
-            from(components["java"])
-        }
-    }
-
-    repositories {
-        maven {
-            name = "local"
-            url = uri("$buildDir/repo")
-        }
-    }
 }
