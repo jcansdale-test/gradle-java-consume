@@ -7,7 +7,7 @@ repositories {
     jcenter()
 }
 
-group = "org.test.plain"
+group = "org.test.consume"
 version = "1.0-SNAPSHOT"
 
 dependencies {
@@ -39,7 +39,7 @@ publishing {
         maven {
             name = "remote"
             // Adapt the URL for your remote repository
-            url = uri("https://maven.pkg.github.com/" + System.getenv("GITHUB_REPOSITORY"))
+            url = uri("https://maven.pkg.github.com/jcansdale-test/gradle-java-publish")
             credentials { 
                 // Use this if the repo requires auth 
                 // see https://docs.gradle.org/6.4/userguide/declaring_repositories.html#sec:supported_transport_protocols
