@@ -1,12 +1,4 @@
-## Status
-
-![Gradle publish](../../workflows/SNAPSHOT/badge.svg)
-
-![Gradle publish with sources.jar](../../workflows/SNAPSHOT%20with%20sources.jar/badge.svg)
-
-![Gradle publish with javadoc.jar](../../workflows/SNAPSHOT%20with%20javadoc.jar/badge.svg)
-
-## Gradle publishing sample
+## Gradle consuming sample
 
 This is a simple project for doing publication to a Maven repository.
 The default setup only has a local repository.
