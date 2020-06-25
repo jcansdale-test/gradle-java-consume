@@ -1,0 +1,20 @@
+name: SNAPSHOT
+
+on:
+  push:
+
+  # trigger when starred
+  watch:
+    types: [started]  
+    
+env:
+  USERNAME: token
+  TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: ./gradlew publish -b plain.gradle.kts
