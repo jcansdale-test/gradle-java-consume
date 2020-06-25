@@ -1,3 +1,5 @@
+![.github/workflows/compile.yml](https://github.com/jcansdale-test/gradle-java-consume/workflows/.github/workflows/compile.yml/badge.svg)
+
 ## Gradle consuming sample
 
 This is a simple project for consuming a package from GitHub Packages.
