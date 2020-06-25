@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - run: ./gradlew compileJava -b plain.gradle.kts
+    - run: ./gradlew build -b plain.gradle.kts
       env:
         USERNAME: token
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
