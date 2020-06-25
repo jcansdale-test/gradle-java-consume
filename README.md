@@ -25,6 +25,6 @@ Added a dependency.
 
 ```
 dependencies {
-    my-dependency("org.test.plain:publish-java:1.0-SNAPSHOT")
+    compile("org.test.plain:publish-java:1.0-SNAPSHOT")
 }
 ```
