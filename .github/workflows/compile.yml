@@ -1,5 +1,4 @@
-  
-name: SNAPSHOT
+name: compileJava
 
 on:
   push:
@@ -8,14 +7,14 @@ on:
   watch:
     types: [started]  
     
-env:
-  USERNAME: token
-  TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   publish:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - run: ./gradlew compile -b plain.gradle.kts
+
+    - run: ./gradlew compileJava -b plain.gradle.kts
+      env:
+        USERNAME: token
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
