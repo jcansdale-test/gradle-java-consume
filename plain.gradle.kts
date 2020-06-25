@@ -29,7 +29,7 @@ dependencies {
 
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.1")
     
-    compile("org.test.plain:publish-java:1.0-SNAPSHOT")
+    my-dependency("org.test.plain:publish-java:1.0-SNAPSHOT")
 }
 
 val test by tasks.getting(Test::class) {
