@@ -28,7 +28,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.1")
 
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.1")
-
+    
     compile("org.test.plain:publish-java:1.0-SNAPSHOT")
 }
 
