@@ -1,5 +1,3 @@
-name: compileJava
-
 on:
   push:
 
@@ -8,7 +6,7 @@ on:
     types: [started]  
     
 jobs:
-  compileJava:
+  build:
     runs-on: ubuntu-latest
 
     steps:
