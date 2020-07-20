@@ -13,6 +13,3 @@ jobs:
     - uses: actions/checkout@v2
 
     - run: ./gradlew build -b plain.gradle.kts
-      env:
-        USERNAME: token
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
