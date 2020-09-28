@@ -16,7 +16,7 @@ jobs:
       run: |
         cat > plain.gradle.kts << EOM
         plugins {
-            `java-library`
+            "java-library"
         }
 
         repositories {
