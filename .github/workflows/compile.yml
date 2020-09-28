@@ -12,12 +12,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Add gradle.kts
+    - name: Add hello.kts
       run: |
         cat > hello.kts << EOM
         `foo`
         EOM
-        cat gradle.kts
+        cat hello.kts
 
     - run: gradle build -b plain.gradle.kts
       env:
