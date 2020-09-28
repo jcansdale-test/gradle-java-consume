@@ -1,4 +1,4 @@
-on:
+ton:
   push:
 
   # trigger when starred
