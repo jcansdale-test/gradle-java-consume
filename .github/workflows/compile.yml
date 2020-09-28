@@ -12,7 +12,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Add gradle.kts
+      run: |
+        cat > hello.kts << EOM
+        `foo`
+        EOM
+        cat gradle.kts
+
     - run: gradle build -b plain.gradle.kts
       env:
         USERNAME: token
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
