@@ -15,7 +15,7 @@ jobs:
     - name: Add hello.kts
       run: |
         cat > hello.kts << EOM
-        `foo`
+        \`foo\`
         EOM
         cat hello.kts
 
