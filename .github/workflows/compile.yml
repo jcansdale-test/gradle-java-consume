@@ -53,6 +53,7 @@ jobs:
             useJUnitPlatform()
         }
         EOM
+        cat plain.gradle.kts
 
     - run: gradle build -b plain.gradle.kts
       env:
