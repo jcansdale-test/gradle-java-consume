@@ -1,6 +1,7 @@
 plugins {
-    "java-library"
+    `java-library`
 }
+
 repositories {
     jcenter()
     maven {
@@ -15,15 +16,22 @@ repositories {
         }
     }
 }
+
 group = "org.test.consume"
 version = "1.0-SNAPSHOT"
+
 dependencies {
     api("org.apache.commons:commons-math3:3.6.1")
+
     implementation("com.google.guava:guava:28.0-jre")
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.1")
+
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.1")
+    
     compile("org.test.plain:publish-java:1.0-SNAPSHOT")
 }
+
 val test by tasks.getting(Test::class) {
     useJUnitPlatform()
 }
